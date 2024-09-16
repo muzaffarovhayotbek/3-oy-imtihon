@@ -7,12 +7,10 @@ $color: rgba(189, 189, 189, 1);
 }
 
 .free-left {
-  // align-items: center;
-}
-
-.free-right {
-  // align-items: center;
   padding: 142px 165px;
+}
+.free-right {
+  align-items: center;
   h6 {
     text-transform: uppercase;
     font-family: "Hind Siliguri";
@@ -51,10 +49,105 @@ $color: rgba(189, 189, 189, 1);
     font-weight: 400;
     line-height: 24px;
     color: $main_color;
-    
   }
 }
-a:hover{
+a:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1420px) {
+  .container {
+    padding: 0 40px;
+  }
+  .free-right {
+    h6 {
+      padding-bottom: 20px;
+
+      font-size: 20px;
+      line-height: 33px;
+    }
+    h2 {
+      font-size: 90px;
+      line-height: 90px;
+      margin-bottom: 18px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0 30px;
+  }
+  .free__container {
+    flex-direction: column;
+    background-color: transparent;
+  }
+  .free-right {
+    h6 {
+      padding-bottom: 15px;
+
+      font-size: 20px;
+      line-height: 33px;
+    }
+    h2 {
+      font-size: 90px;
+      line-height: 90px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .free-right {
+    h6 {
+      text-align: center;
+      padding-bottom: 10px;
+
+      font-size: 16px;
+      line-height: 24px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 65px;
+      line-height: 70px;
+      margin-bottom: 12px;
+    }
+    p {
+      text-align: center;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .free-right {
+    h6 {
+      text-align: center;
+      padding-bottom: 5px;
+
+      font-size: 12px;
+      line-height: 18px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 45px;
+      line-height: 55px;
+      margin-bottom: 6px;
+    }
+    p {
+      text-align: center;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
 }

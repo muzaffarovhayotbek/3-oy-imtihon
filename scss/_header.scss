@@ -85,4 +85,36 @@ header {
   @include header-button-style();
 }
 
+// Media queries for different screen sizes
+@media screen and (max-width: 1420px) {
+  .header__container {
+    flex-direction: row; // Ensure the layout is row for larger screens
+    padding: 0 20px; // Example change
+  }
+}
 
+@media screen and (max-width: 992px) {
+  .header__container {
+    flex-direction: column; // Stack items vertically for medium screens
+    padding: 0 15px; // Example change
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .header__container {
+    align-items: flex-start; // Align items to start for smaller screens
+    padding: 0 10px; // Example change
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .header__container {
+    align-items: center; 
+    text-align: center; // Center text for very small screens
+    padding: 0 5px; // Example change
+  }
+
+  .header-icon {
+    margin-bottom: 10px;
+  }
+}

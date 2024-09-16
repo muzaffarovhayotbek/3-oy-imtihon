@@ -24,9 +24,9 @@
     line-height: 38.81px;
     color: rgba(189, 189, 189, 1);
   }
- .btn{
-  display: flex;
- }
+  .btn {
+    display: flex;
+  }
   button {
     display: flex;
     align-items: center;
@@ -44,7 +44,84 @@
     font-weight: 400;
     line-height: 38.81px;
   }
-  button:hover{
+  button:hover {
     cursor: pointer;
   }
+}
+
+@media screen and (max-width: 1420px) {
+  .hero__container {
+    padding: 0 20px;
+  }
+  .hero__container {
+    gap: 25px;
+  }
+  .hero-left {
+    h1 {
+      font-size: 90px;
+      line-height: 92px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-right{
+    img{
+      width: 500px;
+    }
+  }
+  .hero {
+    margin-top: 110px;
+  }
+  .hero__container {
+    gap: 20px;
+  }
+  .hero-left {
+    h1 {
+      font-size: 70px;
+      line-height: 85px;
+    }
+    p {
+      font-size: 22px;
+      line-height: 35px;
+    }
+    button {
+      font-size: 20px;
+      margin-top: 45px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__container {
+    flex-direction: column;
+  }
+  .hero {
+    margin-top: 80px;
+  }
+  .hero__container {
+    gap: 20px;
+  }
+  .hero-left {
+    h1 {
+      text-align: center;
+      font-size: 60px;
+      line-height: 75px;
+    }
+    p {
+      text-align: center;
+      font-size: 18px;
+      line-height: 32px;
+    }
+    button {
+      font-size: 20px;
+      margin-top: 25px;
+    }
+    .hero-right{
+      img{
+        width: 300px;
+      }
+  }
+}
 }
