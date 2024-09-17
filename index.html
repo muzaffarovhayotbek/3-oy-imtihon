@@ -135,7 +135,6 @@
     </div>
 
     <div class="main-content" id="main-content">
-      
       <!-- header -->
       <header class="header">
         <div class="container header__container">
@@ -616,21 +615,19 @@
         const splashScreen = document.getElementById("splash-screen");
         const mainContent = document.getElementById("main-content");
 
-        // Remove splash screen and show main content after 2 seconds
         setTimeout(() => {
           splashScreen.classList.add("hidden");
           mainContent.classList.add("visible");
-        }, 3000); // 2 seconds delay
+        }, 2000); 
       };
     </script>
 
     <script>
-      // Rang rejimini tanlash uchun kod
       document
         .getElementById("light-mode")
         .addEventListener("click", function () {
           document.body.style.backgroundColor = "#ffffff";
-          document.body.style.color = "#000000";
+          document.body.style.color = "#ad345d";
         });
 
       document
