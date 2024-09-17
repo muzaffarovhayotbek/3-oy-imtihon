@@ -112,12 +112,12 @@
     }
   
     a {
-      font-family: sans-serif; // o'zgaruvchi o'rniga qiymat
+      font-family: sans-serif;
       font-size: 14px;
       font-weight: 400;
       line-height: 22.64px;
       text-align: left;
-      color: #007bff; // o'zgaruvchi o'rniga qiymat
+      color: #007bff;
       margin-top: 10px;
     }
   
@@ -140,7 +140,10 @@
       align-items: center;
       gap: 30px;
       justify-content: center;
-  
+  input{
+
+    border: none;
+  }
       button {
         width: 102px;
         height: 48px;
@@ -148,12 +151,12 @@
         border: none;
         border-radius: 8px;
   
-        font-family: sans-serif; // o'zgaruvchi o'rniga qiymat
-        font-size: 14px; // o'zgaruvchi o'rniga qiymat
+        font-family: sans-serif;
+        font-size: 14px; 
         font-weight: 600;
         line-height: 25.87px;
         text-align: left;
-        color: #ffffff; // o'zgaruvchi o'rniga qiymat
+        color: #ffffff; 
         display: flex;
         align-items: center;
         justify-content: center;
